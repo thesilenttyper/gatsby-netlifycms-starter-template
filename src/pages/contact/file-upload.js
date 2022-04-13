@@ -65,8 +65,20 @@ export default class Contact extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
-                    Your name
+                    Your name / username
                   </label>
+                  <label className="label" htmlFor={'message'}>
+                    Additional notes
+                  </label>
+                  <div className="control">
+                    <textarea
+                      className="textarea"
+                      name={'message'}
+                      onChange={this.handleChange}
+                      id={'message'}
+                      required={true}
+                    />
+                  </div>
                   <div className="control">
                     <input
                       className="input"
